@@ -75,7 +75,7 @@ def guide_delete(id):
     guide = Guide.query.get(id)
     db.session.commit()
 
-    return guide_schema.jsonify(guide)
+    return "Guide was successfully deleted"
 
 if __name__ == '__main__':
     app.run(debug=True)
